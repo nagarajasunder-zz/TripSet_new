@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="Green">#008000</color>
+
+    //random colors
+    <color name="C1">#25CCF7</color>
+    <color name="C2">#1BCA9B</color>
+    <color name="C3">#1287A5</color>
+    <color name="C4">#01CBC6</color>
+    <color name="C5">#3282b8</color>
+    <color name="C6">#1BCA9B</color>
+    <color name="C7">#fa7d09</color>
+
+
+</resources>

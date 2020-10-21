@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Expense_summary">
+
+    <TextView
+        android:id="@+id/trip_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed-light"
+        android:padding="10dp"
+        android:text="Trip name and date"
+        android:textColor="#000"
+        android:textSize="18dp" />
+
+    <View
+        android:id="@+id/start"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/trip_name"
+        android:background="#000" />
+
+    <LinearLayout
+        android:id="@+id/column_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/start"
+        android:background="#B9EA9A"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <TextView
+            android:id="@+id/person"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-condensed"
+            android:padding="5dp"
+            android:text="Person"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:background="#000" />
+
+        <TextView
+            android:id="@+id/spent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-condensed"
+            android:padding="5dp"
+            android:text="Spent"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:background="#000" />
+
+        <TextView
+            android:id="@+id/due"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-condensed"
+            android:padding="5dp"
+            android:text="Due/refund"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/end"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/column_layout"
+        android:background="#000" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/end" />
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/recycler_view"
+        android:background="#B9EA9A"
+        android:fontFamily="sans-serif-condensed"
+        android:padding="8dp"
+        android:text="Total: "
+        android:textColor="#000"
+        android:textSize="20dp" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="#000"
+        android:layout_below="@+id/total"/>
+</RelativeLayout>

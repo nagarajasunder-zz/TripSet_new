@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".New_Expense">
+
+
+    <RelativeLayout
+        android:id="@+id/info_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="#fff1e1"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#000">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-light"
+                android:hint="Description"
+                android:textSize="20dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Category"
+            android:textSize="20dp"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="#000"
+            android:layout_below="@+id/desc"
+            android:layout_toLeftOf="@+id/add_category"
+            android:padding="10dp"/>
+
+
+        <ImageView
+            android:id="@+id/add_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/desc"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            android:layout_gravity="end"
+            android:src="@drawable/add_category" />
+
+        <TextView
+            android:id="@+id/spent_by_t"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Spent By"
+            android:textSize="20dp"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="#000"
+            android:layout_below="@+id/category"
+            android:padding="10dp"/>
+
+
+        <TextView
+            android:id="@+id/share_by_d"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Share By"
+            android:textSize="20dp"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="#000"
+            android:layout_below="@+id/spent_by_t"
+            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/share_by"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:fontFamily="@font/roboto_thin"
+            android:layout_below="@+id/share_by_d"
+            android:textColor="#000"
+            android:visibility="gone"
+            android:padding="10dp"/>
+    </RelativeLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/amt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/info_layout"
+        android:textColorHint="#000">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Amount spent"
+            android:textSize="20dp"
+            android:inputType="number"
+            android:fontFamily="sans-serif-condensed-light" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:id="@+id/save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/amt"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Save Expense"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="#0DDF64"
+        android:textSize="20dp"
+        android:layout_centerInParent="true"
+        android:textColor="#000" />
+</RelativeLayout>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff"
+    tools:context=".Trip_expand">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#3315ADED"
+            app:titleTextColor="#fff"
+            android:elevation="4dp">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-light"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#fff"/>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/decor"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="-1dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/trip_bg"
+        android:transitionName="transition" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff1e1"
+            android:layout_below="@+id/decor"
+            android:padding="5dp" />
+
+    <Button
+        android:id="@+id/add_expense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/recycler_view"
+        android:layout_centerInParent="true"
+        android:layout_margin="8dp"
+        android:background="@drawable/button_bg"
+        android:fontFamily="sans-serif-condensed-light"
+        android:padding="8dp"
+        android:text="Add new expense"
+        android:textColor="#fff"
+        android:textSize="15dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_expense"
+        android:layout_margin="8dp"
+        android:background="#fff1e1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:padding="10dp"
+            android:text="Total"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000" />
+
+        <TextView
+            android:id="@+id/history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/next"
+            android:fontFamily="sans-serif-condensed-light"
+            android:padding="10dp"
+            android:text="Expense history"
+            android:textColor="#000"
+            android:textSize="15dp" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000" />
+
+        <TextView
+            android:id="@+id/stats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/next"
+            android:fontFamily="sans-serif-condensed-light"
+            android:padding="10dp"
+            android:text="Stats"
+            android:textColor="#000"
+            android:textSize="15dp" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000" />
+
+        <TextView
+            android:id="@+id/summary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/next"
+            android:fontFamily="sans-serif-condensed-light"
+            android:padding="10dp"
+            android:text="Expense summary"
+            android:textColor="#000"
+            android:textSize="15dp" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000" />
+
+
+        <TextView
+            android:id="@+id/itinerary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/next"
+            android:fontFamily="sans-serif-condensed-light"
+            android:padding="10dp"
+            android:text="Trip Itinerary"
+            android:textColor="#000"
+            android:textSize="15dp" />
+    </LinearLayout>
+    </RelativeLayout>
+
+
+</ScrollView>

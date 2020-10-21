@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/settings"
+        android:icon="@drawable/settings"
+        android:title="Settings"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/search"
+        android:title="Search"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="ifRoom|collapseActionView" />
+    <item
+        android:id="@+id/order_by_amount"
+        android:title="Sort by amount ↑"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/order_by_amount_desc"
+        android:title="Sort by amount ↓"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/order_by_date"
+        android:title="Sort by date ↑"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/order_by_date_desc"
+        android:title="Sort by date ↓"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/sort_by_name"
+        android:title="Sort by Trip name (A-Z)"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/sort_by_name_desc"
+        android:title="Sort by Trip name (Z-A)"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/sort_by_count"
+        android:title="Sort by group count ↑"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/sort_by_count_desc"
+        android:title="Sort by group count ↓"
+        app:showAsAction="never" />
+
+</menu>

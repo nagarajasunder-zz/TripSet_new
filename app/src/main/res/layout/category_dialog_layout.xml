@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/root_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:src="@drawable/logo"/>
+
+    <TextView
+        android:id="@+id/appname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:text="Tripset Version 1.1"
+        android:fontFamily="sans-serif-condensed-light"
+        android:textColor="#000"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:visibility="gone"
+        android:padding="8dp"/>
+    ↕<TextView
+        android:id="@+id/company"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appname"
+        android:padding="5dp"
+        android:textSize="15dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:textColor="#000"
+        android:textAlignment="center"
+        android:visibility="gone"
+        android:text="Geekydroid"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="Select a Category"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:visibility="gone"
+        android:background="#304FFE"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_below="@+id/title"/>
+</RelativeLayout>

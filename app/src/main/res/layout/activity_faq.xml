@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CDF2F6"
+    tools:context=".faq">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:text="Frequently asked questions\nclick to open"
+        android:fontFamily="sans-serif-condensed"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textColor="#000"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/title"
+        android:padding="6dp"
+                                                                                                                                                                                                                                                                                                                              android:layout_height="wrap_content"/>
+</RelativeLayout>
